@@ -1,0 +1,1179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot
+  name="my_spideybot">
+      <link name="dummy" />
+    <joint name="dummy_base_link" type="fixed">
+        <parent link="dummy" />
+        <child link="base_link" />
+    </joint>
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.086929 -0.18825 0.11918"
+        rpy="0 0 0" />
+      <mass
+        value="0.53458" />
+      <inertia
+        ixx="0.0020324"
+        ixy="5.8234E-19"
+        ixz="7.2524E-21"
+        iyy="0.0015098"
+        iyz="1.2138E-19"
+        izz="0.0035077" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.69412 0.098039 0.098039 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="hip1_link">
+    <inertial>
+      <origin
+        xyz="2.7756E-17 0.0175 0.02875"
+        rpy="0 0 0" />
+      <mass
+        value="0.010462" />
+      <inertia
+        ixx="1.9878E-06"
+        ixy="-1.2808E-23"
+        ixz="-2.1176E-22"
+        iyy="1.9878E-06"
+        iyz="-4.8885E-13"
+        izz="6.7997E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/hip1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/hip1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip1_joint"
+    type="revolute">
+    <origin
+      xyz="0.011929 -0.28825 0.10168"
+      rpy="1.5708 0 -0.6435" />
+    <parent
+      link="base_link" />
+    <child
+      link="hip1_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="thigh1_link">
+    <inertial>
+      <origin
+        xyz="2.8109E-13 -2.3259E-06 0.018733"
+        rpy="0 0 0" />
+      <mass
+        value="0.027144" />
+      <inertia
+        ixx="7.8675E-06"
+        ixy="-1.8487E-17"
+        ixz="-1.8122E-17"
+        iyy="6.523E-06"
+        iyz="-3.5464E-10"
+        izz="2.8446E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/thigh1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/thigh1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thigh1_joint"
+    type="revolute">
+    <origin
+      xyz="0 0.0175 0.0575"
+      rpy="0 0 1.5708" />
+    <parent
+      link="hip1_link" />
+    <child
+      link="thigh1_link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="leg1_link">
+    <inertial>
+      <origin
+        xyz="2.7354E-05 -1.1102E-16 0.022876"
+        rpy="0 0 0" />
+      <mass
+        value="0.028117" />
+      <inertia
+        ixx="2.0146E-05"
+        ixy="8.4703E-22"
+        ixz="-4.0889E-08"
+        iyy="2.1225E-05"
+        iyz="2.2443E-22"
+        izz="2.6051E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/leg1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/leg1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg1_joing"
+    type="revolute">
+    <origin
+      xyz="0 0 0.08"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="thigh1_link" />
+    <child
+      link="leg1_link" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="hip2_link">
+    <inertial>
+      <origin
+        xyz="0 -0.0175 -0.02875"
+        rpy="0 0 0" />
+      <mass
+        value="0.010462" />
+      <inertia
+        ixx="1.9878E-06"
+        ixy="2.0602E-24"
+        ixz="7.0783E-23"
+        iyy="1.9878E-06"
+        iyz="-4.8885E-13"
+        izz="6.7997E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/hip2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/hip2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip2_joint"
+    type="revolute">
+    <origin
+      xyz="-0.018071 -0.18825 0.10168"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="hip2_link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="thigh2_link">
+    <inertial>
+      <origin
+        xyz="3.2477E-13 -2.3259E-06 0.018733"
+        rpy="0 0 0" />
+      <mass
+        value="0.027144" />
+      <inertia
+        ixx="7.8675E-06"
+        ixy="-2.1304E-17"
+        ixz="1.0487E-17"
+        iyy="6.523E-06"
+        iyz="-3.5464E-10"
+        izz="2.8446E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/thigh2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/thigh2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thigh2_joint"
+    type="revolute">
+    <origin
+      xyz="0 -0.0175 -0.0575"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="hip2_link" />
+    <child
+      link="thigh2_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="leg2_link">
+    <inertial>
+      <origin
+        xyz="2.7354E-05 3.9924E-13 0.022876"
+        rpy="0 0 0" />
+      <mass
+        value="0.028117" />
+      <inertia
+        ixx="2.0146E-05"
+        ixy="-1.5748E-14"
+        ixz="-4.0889E-08"
+        iyy="2.1225E-05"
+        iyz="-5.9677E-16"
+        izz="2.6051E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/leg2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/leg2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg2_joint"
+    type="revolute">
+    <origin
+      xyz="0 0 0.08"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="thigh2_link" />
+    <child
+      link="leg2_link" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="hip3_link">
+    <inertial>
+      <origin
+        xyz="1.3878E-17 0.0175 0.02875"
+        rpy="0 0 0" />
+      <mass
+        value="0.010462" />
+      <inertia
+        ixx="1.9878E-06"
+        ixy="-2.7626E-23"
+        ixz="-2.3823E-22"
+        iyy="1.9878E-06"
+        iyz="-4.8885E-13"
+        izz="6.7997E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/hip3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/hip3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip3_joint"
+    type="revolute">
+    <origin
+      xyz="0.011929 -0.088245 0.10168"
+      rpy="1.5708 0 -2.4981" />
+    <parent
+      link="base_link" />
+    <child
+      link="hip3_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="thigh3_link">
+    <inertial>
+      <origin
+        xyz="2.8109E-13 -2.3259E-06 0.018733"
+        rpy="0 0 0" />
+      <mass
+        value="0.027144" />
+      <inertia
+        ixx="7.8675E-06"
+        ixy="-1.8488E-17"
+        ixz="-1.8124E-17"
+        iyy="6.523E-06"
+        iyz="-3.5464E-10"
+        izz="2.8446E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/thigh3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/thigh3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thigh3_joint"
+    type="revolute">
+    <origin
+      xyz="0 0.0175 0.0575"
+      rpy="0 0 1.5708" />
+    <parent
+      link="hip3_link" />
+    <child
+      link="thigh3_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="leg3_link">
+    <inertial>
+      <origin
+        xyz="2.7354E-05 1.3878E-17 0.022876"
+        rpy="0 0 0" />
+      <mass
+        value="0.028117" />
+      <inertia
+        ixx="2.0146E-05"
+        ixy="-1.6941E-21"
+        ixz="-4.0889E-08"
+        iyy="2.1225E-05"
+        iyz="-1.35E-21"
+        izz="2.6051E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/leg3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/leg3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg3_joint"
+    type="revolute">
+    <origin
+      xyz="0 0 0.08"
+      rpy="-1.5708 0 1.5708" />
+    <parent
+      link="thigh3_link" />
+    <child
+      link="leg3_link" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="hip4_link">
+    <inertial>
+      <origin
+        xyz="5.5511E-17 0.0175 0.02875"
+        rpy="0 0 0" />
+      <mass
+        value="0.010462" />
+      <inertia
+        ixx="1.9878E-06"
+        ixy="9.3745E-24"
+        ixz="-1.1117E-21"
+        iyy="1.9878E-06"
+        iyz="-4.8885E-13"
+        izz="6.7997E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/hip4_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/hip4_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip4_joint"
+    type="revolute">
+    <origin
+      xyz="0.16193 -0.28825 0.10168"
+      rpy="1.5708 0 0.6435" />
+    <parent
+      link="base_link" />
+    <child
+      link="hip4_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="thigh4_link">
+    <inertial>
+      <origin
+        xyz="2.8111E-13 -2.3259E-06 0.018733"
+        rpy="0 0 0" />
+      <mass
+        value="0.027144" />
+      <inertia
+        ixx="7.8675E-06"
+        ixy="-1.8488E-17"
+        ixz="-1.8123E-17"
+        iyy="6.523E-06"
+        iyz="-3.5464E-10"
+        izz="2.8446E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/thigh4_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/thigh4_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thigh4_joint"
+    type="revolute">
+    <origin
+      xyz="0 0.0175 0.0575"
+      rpy="0 0 1.5708" />
+    <parent
+      link="hip4_link" />
+    <child
+      link="thigh4_link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="leg4_link">
+    <inertial>
+      <origin
+        xyz="2.7354E-05 5.5511E-17 0.022876"
+        rpy="0 0 0" />
+      <mass
+        value="0.028117" />
+      <inertia
+        ixx="2.0146E-05"
+        ixy="1.6941E-21"
+        ixz="-4.0889E-08"
+        iyy="2.1225E-05"
+        iyz="-1.1551E-20"
+        izz="2.6051E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/leg4_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/leg4_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg4_joint"
+    type="revolute">
+    <origin
+      xyz="0 0 0.08"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="thigh4_link" />
+    <child
+      link="leg4_link" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="hip5_link">
+    <inertial>
+      <origin
+        xyz="0 0.0175 0.02875"
+        rpy="0 0 0" />
+      <mass
+        value="0.010462" />
+      <inertia
+        ixx="1.9878E-06"
+        ixy="1.4323E-24"
+        ixz="-4.9299E-23"
+        iyy="1.9878E-06"
+        iyz="-4.8885E-13"
+        izz="6.7997E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/hip5_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/hip5_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip5_joint"
+    type="revolute">
+    <origin
+      xyz="0.19193 -0.18825 0.10168"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="hip5_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="thigh5_link">
+    <inertial>
+      <origin
+        xyz="3.2482E-13 -2.3259E-06 0.018733"
+        rpy="0 0 0" />
+      <mass
+        value="0.027144" />
+      <inertia
+        ixx="7.8675E-06"
+        ixy="-2.1304E-17"
+        ixz="1.0487E-17"
+        iyy="6.523E-06"
+        iyz="-3.5464E-10"
+        izz="2.8446E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/thigh5_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/thigh5_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thigh5_joint"
+    type="revolute">
+    <origin
+      xyz="0 0.0175 0.0575"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="hip5_link" />
+    <child
+      link="thigh5_link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="leg5_link">
+    <inertial>
+      <origin
+        xyz="2.7354E-05 5.5511E-17 0.022876"
+        rpy="0 0 0" />
+      <mass
+        value="0.028117" />
+      <inertia
+        ixx="2.0146E-05"
+        ixy="1.2116E-22"
+        ixz="-4.0889E-08"
+        iyy="2.1225E-05"
+        iyz="-3.431E-22"
+        izz="2.6051E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/leg5_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/leg5_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg5_joint"
+    type="revolute">
+    <origin
+      xyz="0 0 0.08"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="thigh5_link" />
+    <child
+      link="leg5_link" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="hip6_link">
+    <inertial>
+      <origin
+        xyz="0.086929 -0.18825 0.11918"
+        rpy="0 0 0" />
+      <mass
+        value="0.53458" />
+      <inertia
+        ixx="0.0020324"
+        ixy="5.8234E-19"
+        ixz="7.2524E-21"
+        iyy="0.0015098"
+        iyz="1.2138E-19"
+        izz="0.0035077" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/hip6_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.69412 0.098039 0.098039 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/hip6_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip6_joint"
+    type="revolute">
+    <origin
+      xyz="0.16193 -0.088245 0.10168"
+      rpy="1.5708 0 2.4981" />
+    <parent
+      link="base_link" />
+    <child
+      link="hip6_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="thigh6_link">
+    <inertial>
+      <origin
+        xyz="2.8109E-13 -2.3259E-06 0.018733"
+        rpy="0 0 0" />
+      <mass
+        value="0.027144" />
+      <inertia
+        ixx="7.8675E-06"
+        ixy="-1.8487E-17"
+        ixz="-1.8124E-17"
+        iyy="6.523E-06"
+        iyz="-3.5464E-10"
+        izz="2.8446E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/thigh6_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/thigh6_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thigh6_joint"
+    type="revolute">
+    <origin
+      xyz="0 0.0175 0.0575"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="hip6_link" />
+    <child
+      link="thigh6_link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="leg6_link">
+    <inertial>
+      <origin
+        xyz="2.7354E-05 5.5511E-17 0.022876"
+        rpy="0 0 0" />
+      <mass
+        value="0.028117" />
+      <inertia
+        ixx="2.0146E-05"
+        ixy="1.6941E-21"
+        ixz="-4.0889E-08"
+        iyy="2.1225E-05"
+        iyz="-6.3682E-21"
+        izz="2.6051E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/leg6_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_spideybot/meshes/leg6_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg6_joint"
+    type="revolute">
+    <origin
+      xyz="0 0 0.08"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="thigh6_link" />
+    <child
+      link="leg6_link" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="5" />
+  </joint>
+
+  <gazebo reference="base_link">
+    <material>Gazebo/Red</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="hip1_link">
+    <material>Gazebo/Blue</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="thigh1_link">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="leg1_link">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+
+  <gazebo reference="hip2_link">
+    <material>Gazebo/Blue</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="thigh2_link">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="leg2_link">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+
+  <gazebo reference="hip3_link">
+    <material>Gazebo/Blue</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="thigh3_link">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="leg3_link">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+
+  <gazebo reference="hip4_link">
+    <material>Gazebo/Blue</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="thigh4_link">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="leg4_link">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+
+  <gazebo reference="hip5_link">
+    <material>Gazebo/Blue</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="thigh5_link">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="leg5_link">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+
+  <gazebo reference="hip6_link">
+    <material>Gazebo/Blue</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="thigh6_link">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="leg6_link">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+
+  <plugin name="pexod_control" filename="libpexod_plugin.so"/>
+    
+</robot>
