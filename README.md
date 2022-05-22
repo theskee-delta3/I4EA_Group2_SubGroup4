@@ -22,5 +22,6 @@ rosrun my_spideybot camera_capture.py
 ![alt text](https://github.com/theskee-delta3/my_spideybot/blob/sensor/photo/pic34.png)\
 \
 > pic39.png\
-![alt text](https://github.com/theskee-delta3/my_spideybot/blob/sensor/photo/pic39.png)
+![alt text](https://github.com/theskee-delta3/my_spideybot/blob/sensor/photo/pic39.png)\
+![alt text](https://www.youtube.com/watch?v=HGmUV8N2XoQ)
 
