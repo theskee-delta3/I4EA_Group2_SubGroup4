@@ -17,7 +17,7 @@ roslaunch my_spideybot robot.launch
 ```
 rosrun my_spideybot camera_capture.py
 ```
-# Camera capture demo
-![alt text](https://github.com/theskee-delta3/my_spideybot/blob/sensor/photo/pic34.png)
-
+# Camera Capture Demo
+![alt text](https://github.com/theskee-delta3/my_spideybot/blob/sensor/photo/pic34.png)\
+![alt text](https://github.com/theskee-delta3/my_spideybot/blob/sensor/photo/pic39.png)
 
