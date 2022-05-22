@@ -1,0 +1,93 @@
+{
+  "keys": {},
+  "groups": {
+    "pluginmanager": {
+      "keys": {
+        "running-plugins": {
+          "type": "repr",
+          "repr": "{u'rqt_publisher/Publisher': [1]}"
+        }
+      },
+      "groups": {
+        "plugin__rqt_publisher__Publisher__1": {
+          "keys": {},
+          "groups": {
+            "dock_widget__PublisherWidget": {
+              "keys": {
+                "dockable": {
+                  "type": "repr",
+                  "repr": "True"
+                },
+                "parent": {
+                  "type": "repr",
+                  "repr": "None"
+                },
+                "dock_widget_title": {
+                  "type": "repr",
+                  "repr": "u'Message Publisher'"
+                }
+              },
+              "groups": {}
+            },
+            "plugin": {
+              "keys": {
+                "publishers": {
+                  "type": "repr",
+                  "repr": "u\"[{'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint1_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 3, 'counter': 8582}, {'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint2_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 4, 'counter': 8562}, {'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint3_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 5, 'counter': 8540}, {'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint4_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 6, 'counter': 8499}, {'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint5_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 7, 'counter': 8443}, {'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint6_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 8, 'counter': 8366}, {'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint7_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 9, 'counter': 6900}, {'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint8_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 10, 'counter': 6886}, {'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint9_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 11, 'counter': 6868}, {'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint10_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 12, 'counter': 6848}, {'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint11_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 13, 'counter': 5896}, {'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint12_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 14, 'counter': 5880}, {'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint13_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 15, 'counter': 5857}, {'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint14_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 16, 'counter': 4281}, {'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint15_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 17, 'counter': 4256}, {'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint16_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 18, 'counter': 4240}, {'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint17_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 19, 'counter': 4215}, {'type_name': 'std_msgs/Float64', 'topic_name': '/my_spideybot/joint18_position_controller/command', 'enabled': False, 'rate': 50.0, 'expressions': {}, 'publisher_id': 20, 'counter': 4197}]\""
+                }
+              },
+              "groups": {}
+            }
+          }
+        },
+        "plugin__rqt_action__ActionPlugin__1": {
+          "keys": {},
+          "groups": {
+            "dock_widget__messages.ui": {
+              "keys": {
+                "dockable": {
+                  "type": "repr",
+                  "repr": "True"
+                },
+                "parent": {
+                  "type": "repr",
+                  "repr": "None"
+                },
+                "dock_widget_title": {
+                  "type": "repr",
+                  "repr": "u'Action Type Browser'"
+                }
+              },
+              "groups": {}
+            }
+          }
+        }
+      }
+    },
+    "mainwindow": {
+      "keys": {
+        "geometry": {
+          "type": "repr(QByteArray.hex)",
+          "repr(QByteArray.hex)": "QtCore.QByteArray('01d9d0cb000200000000005300000022000003e800000377000000530000003e000003e8000003770000000000000000077e')",
+          "pretty-print": "     S \"   w S >   w    ~"
+        },
+        "state": {
+          "type": "repr(QByteArray.hex)",
+          "repr(QByteArray.hex)": "QtCore.QByteArray('000000ff00000000fd00000001000000030000039600000306fc0100000004fb00000030005f005f0044006f0063006b0057006900640067006500740043006f006e007400610069006e00650072005f005f00310100000000000002580000000000000000fb00000050007200710074005f0061006300740069006f006e005f005f0041006300740069006f006e0050006c007500670069006e005f005f0031005f005f006d0065007300730061006700650073002e007500690100000000000002ed0000000000000000fb00000064007200710074005f006c00610075006e00630068005f005f004c00610075006e00630068005f005f0031005f005f005f0070006c007500670069006e0063006f006e007400610069006e00650072005f0074006f0070005f0077006900640067006500740100000274000000fb0000000000000000fb00000058007200710074005f007000750062006c00690073006800650072005f005f005000750062006c00690073006800650072005f005f0031005f005f005000750062006c006900730068006500720057006900640067006500740100000000000003960000027900ffffff000003960000000000000004000000040000000800000008fc00000001000000030000000100000036004d0069006e0069006d0069007a006500640044006f0063006b00570069006400670065007400730054006f006f006c0062006100720000000000ffffffff0000000000000000')",
+          "pretty-print": "                 0__DockWidgetContainer__1          Prqt_action__ActionPlugin__1__messages.ui          drqt_launch__Launch__1___plugincontainer_top_widget          Xrqt_publisher__Publisher__1__PublisherWidget                            6MinimizedDockWidgetsToolbar        "
+        }
+      },
+      "groups": {
+        "toolbar_areas": {
+          "keys": {
+            "MinimizedDockWidgetsToolbar": {
+              "type": "repr",
+              "repr": "8"
+            }
+          },
+          "groups": {}
+        }
+      }
+    }
+  }
+}
