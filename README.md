@@ -20,6 +20,7 @@ rosrun my_spideybot camera_capture.py
 # Camera Capture Demo
 > Photo 1\
 ![alt text](https://github.com/theskee-delta3/my_spideybot/blob/sensor/photo/pic34.png)\
+\
 > Photo 2\
 ![alt text](https://github.com/theskee-delta3/my_spideybot/blob/sensor/photo/pic39.png)
 
