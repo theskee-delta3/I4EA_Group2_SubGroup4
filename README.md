@@ -8,7 +8,7 @@
  3. KHOEUNG Mengkorng,   ID: e20180407
  4. KIM Veasna,          ID: e20180431
  5. KLENG Vireak,        ID: e20180439
-# Homework 04: Adding sensor 
+# Homework 04: Adding Sensor 
 # RUN
 > Gazebo
 ```
