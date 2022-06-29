@@ -1,0 +1,89 @@
+my_spideybot:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+  
+  # Position leg1 Controllers ---------------------------------------
+  joint1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: hip1_joint
+    pid: {p: 45, i: 10.0, d: 0.0}
+  joint2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: thigh1_joint
+    pid: {p: 75, i: 20, d: 0.0}
+  joint3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: leg1_joint
+    pid: {p: 50.0, i: 20, d: 0.0}
+
+  # Position leg2 Controllers ---------------------------------------
+  joint4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: hip2_joint
+    pid: {p: 45.0, i: 10.0, d: 0.0}
+  joint5_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: thigh2_joint
+    pid: {p: 75.0, i: 20.0, d: 0.0}
+  joint6_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: leg2_joint
+    pid: {p: 50.0, i: 20.0, d: 0.0}
+    
+  # Position leg3 Controllers ---------------------------------------
+  joint7_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: hip3_joint
+    pid: {p: 45.0, i: 10.0, d: 0.0}
+  joint8_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: thigh3_joint
+    pid: {p: 75.0, i: 20.0, d: 0.0}
+  joint9_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: leg3_joint
+    pid: {p: 50.0, i: 20.0, d: 0.0}
+
+  # Position leg4 Controllers ---------------------------------------
+  joint10_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: hip4_joint
+    pid: {p: 45.0, i: 10.0, d: 0.0}
+  joint11_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: thigh4_joint
+    pid: {p: 75.0, i: 2.0, d: 0.0}
+  joint12_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: leg4_joint
+    pid: {p: 50.0, i: 20.0, d: 0.0}
+
+  # Position leg5 Controllers ---------------------------------------
+  joint13_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: hip5_joint
+    pid: {p: 45.0, i: 10.0, d: 0.0}
+  joint14_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: thigh5_joint
+    pid: {p: 75.0, i: 20.0, d: 0.0}
+  joint15_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: leg5_joint
+    pid: {p: 50.0, i: 20.0, d: 0.0}
+
+  # Position leg6 Controllers ---------------------------------------
+  joint16_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: hip6_joint
+    pid: {p: 45.0, i: 10.0, d: 0.0}
+  joint17_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: thigh6_joint
+    pid: {p: 75.0, i: 20.0, d: 0.0}
+  joint18_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: leg6_joint
+    pid: {p: 50.0, i: 20.0, d: 0.0}
