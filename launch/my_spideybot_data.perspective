@@ -1,0 +1,173 @@
+{
+  "keys": {},
+  "groups": {
+    "pluginmanager": {
+      "keys": {
+        "running-plugins": {
+          "type": "repr",
+          "repr": "{u'rqt_publisher/Publisher': [1]}"
+        }
+      },
+      "groups": {
+        "plugin__rqt_plot__Plot__1": {
+          "keys": {},
+          "groups": {
+            "plugin": {
+              "keys": {
+                "autoscroll": {
+                  "type": "repr",
+                  "repr": "u'true'"
+                },
+                "plot_type": {
+                  "type": "repr",
+                  "repr": "u'1'"
+                },
+                "topics": {
+                  "type": "repr",
+                  "repr": "u''"
+                },
+                "y_limits": {
+                  "type": "repr",
+                  "repr": "[u'0', u'1']"
+                },
+                "x_limits": {
+                  "type": "repr",
+                  "repr": "[u'0', u'1']"
+                }
+              },
+              "groups": {}
+            }
+          }
+        },
+        "plugin__rqt_publisher__Publisher__1": {
+          "keys": {},
+          "groups": {
+            "dock_widget__PublisherWidget": {
+              "keys": {
+                "dockable": {
+                  "type": "repr",
+                  "repr": "True"
+                },
+                "parent": {
+                  "type": "repr",
+                  "repr": "None"
+                },
+                "dock_widget_title": {
+                  "type": "repr",
+                  "repr": "u'Message Publisher'"
+                }
+              },
+              "groups": {}
+            },
+            "plugin": {
+              "keys": {
+                "publishers": {
+                  "type": "repr",
+                  "repr": "u\"[{'topic_name': '/my_spideybot/joint1_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint1_position_controller/command/data': '0'}, 'publisher_id': 0, 'counter': 32327}, {'topic_name': '/my_spideybot/joint2_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint2_position_controller/command/data': '-0.3'}, 'publisher_id': 1, 'counter': 73293}, {'topic_name': '/my_spideybot/joint3_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint3_position_controller/command/data': '0.2'}, 'publisher_id': 2, 'counter': 49639}, {'topic_name': '/my_spideybot/joint4_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint4_position_controller/command/data': '0'}, 'publisher_id': 3, 'counter': 42563}, {'topic_name': '/my_spideybot/joint5_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint5_position_controller/command/data': '0.3'}, 'publisher_id': 4, 'counter': 56282}, {'topic_name': '/my_spideybot/joint6_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint6_position_controller/command/data': '0.2'}, 'publisher_id': 5, 'counter': 46952}, {'topic_name': '/my_spideybot/joint7_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint7_position_controller/command/data': '0'}, 'publisher_id': 6, 'counter': 15949}, {'topic_name': '/my_spideybot/joint8_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint8_position_controller/command/data': '0.3'}, 'publisher_id': 7, 'counter': 54722}, {'topic_name': '/my_spideybot/joint9_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint9_position_controller/command/data': '-0.2'}, 'publisher_id': 8, 'counter': 45705}, {'topic_name': '/my_spideybot/joint10_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint10_position_controller/command/data': '0'}, 'publisher_id': 9, 'counter': 14846}, {'topic_name': '/my_spideybot/joint11_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint11_position_controller/command/data': '-0.3'}, 'publisher_id': 10, 'counter': 54001}, {'topic_name': '/my_spideybot/joint12_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint12_position_controller/command/data': '0.2'}, 'publisher_id': 11, 'counter': 45277}, {'topic_name': '/my_spideybot/joint13_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint13_position_controller/command/data': '0'}, 'publisher_id': 12, 'counter': 12191}, {'topic_name': '/my_spideybot/joint14_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint14_position_controller/command/data': '0.3'}, 'publisher_id': 13, 'counter': 53193}, {'topic_name': '/my_spideybot/joint15_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint15_position_controller/command/data': '-0.2'}, 'publisher_id': 14, 'counter': 44816}, {'topic_name': '/my_spideybot/joint16_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint16_position_controller/command/data': '0.0'}, 'publisher_id': 15, 'counter': 31180}, {'topic_name': '/my_spideybot/joint17_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint17_position_controller/command/data': '0.3'}, 'publisher_id': 16, 'counter': 54819}, {'topic_name': '/my_spideybot/joint18_position_controller/command', 'type_name': 'std_msgs/Float64', 'enabled': False, 'rate': 50.0, 'expressions': {u'/my_spideybot/joint18_position_controller/command/data': '-0.2'}, 'publisher_id': 17, 'counter': 46474}]\""
+                }
+              },
+              "groups": {}
+            }
+          }
+        },
+        "plugin__rqt_action__ActionPlugin__1": {
+          "keys": {},
+          "groups": {
+            "dock_widget__messages.ui": {
+              "keys": {
+                "dockable": {
+                  "type": "repr",
+                  "repr": "u'true'"
+                },
+                "parent": {
+                  "type": "repr",
+                  "repr": "None"
+                },
+                "dock_widget_title": {
+                  "type": "repr",
+                  "repr": "u'Action Type Browser'"
+                }
+              },
+              "groups": {}
+            }
+          }
+        },
+        "plugin__rqt_reconfigure__Param__1": {
+          "keys": {},
+          "groups": {
+            "plugin": {
+              "keys": {
+                "expanded_nodes": {
+                  "type": "repr",
+                  "repr": "[u'/my_spideybot', u'/my_spideybot/joint1_position_controller', u'/my_spideybot/joint2_position_controller', u'/my_spideybot/joint3_position_controller']"
+                },
+                "splitter": {
+                  "type": "repr(QByteArray.hex)",
+                  "repr(QByteArray.hex)": "QtCore.QByteArray('000000ff0000000100000002000000cc0000005501ffffffff010000000100')",
+                  "pretty-print": "         U     "
+                },
+                "selected_nodes": {
+                  "type": "repr",
+                  "repr": "[u'/my_spideybot/joint3_position_controller/pid', u'/my_spideybot/joint2_position_controller/pid', u'/my_spideybot/joint1_position_controller/pid']"
+                },
+                "_splitter": {
+                  "type": "repr(QByteArray.hex)",
+                  "repr(QByteArray.hex)": "QtCore.QByteArray('000000ff00000001000000020000012c000000640100000009010000000200')",
+                  "pretty-print": "       , d     "
+                },
+                "text": {
+                  "type": "repr",
+                  "repr": "u''"
+                }
+              },
+              "groups": {}
+            }
+          }
+        },
+        "plugin__rqt_top__TOP__1": {
+          "keys": {},
+          "groups": {
+            "plugin": {
+              "keys": {
+                "is_regex": {
+                  "type": "repr",
+                  "repr": "u'0'"
+                },
+                "filter_text": {
+                  "type": "repr",
+                  "repr": "u''"
+                }
+              },
+              "groups": {}
+            }
+          }
+        }
+      }
+    },
+    "mainwindow": {
+      "keys": {
+        "geometry": {
+          "type": "repr(QByteArray.hex)",
+          "repr(QByteArray.hex)": "QtCore.QByteArray('01d9d0cb00020000000000e0000000220000047600000375000000e00000003e000004760000037500000000000000000780')",
+          "pretty-print": "       \" v u   > v u     "
+        },
+        "state": {
+          "type": "repr(QByteArray.hex)",
+          "repr(QByteArray.hex)": "QtCore.QByteArray('000000ff00000000fd00000001000000030000039700000304fc0100000007fb00000030005f005f0044006f0063006b0057006900640067006500740043006f006e007400610069006e00650072005f005f00310100000000000002580000000000000000fb00000050007200710074005f0061006300740069006f006e005f005f0041006300740069006f006e0050006c007500670069006e005f005f0031005f005f006d0065007300730061006700650073002e0075006901000000000000026d0000000000000000fb00000064007200710074005f006c00610075006e00630068005f005f004c00610075006e00630068005f005f0031005f005f005f0070006c007500670069006e0063006f006e007400610069006e00650072005f0074006f0070005f0077006900640067006500740100000274000000fb0000000000000000fb00000058007200710074005f007000750062006c00690073006800650072005f005f005000750062006c00690073006800650072005f005f0031005f005f005000750062006c006900730068006500720057006900640067006500740100000000000003970000027900fffffffb0000006c007200710074005f007200650063006f006e006600690067007500720065005f005f0050006100720061006d005f005f0031005f005f005f0070006c007500670069006e0063006f006e007400610069006e00650072005f0074006f0070005f00770069006400670065007401000002ea000003a30000000000000000fb00000042007200710074005f0070006c006f0074005f005f0050006c006f0074005f005f0031005f005f00440061007400610050006c006f007400570069006400670065007403000001120000003f0000053200000306fb00000022007200710074005f0074006f0070005f005f0054004f0050005f005f0031005f005f0100000299000000fd0000000000000000000003970000000000000004000000040000000800000008fc00000001000000030000000100000036004d0069006e0069006d0069007a006500640044006f0063006b00570069006400670065007400730054006f006f006c0062006100720000000000ffffffff0000000000000000')",
+          "pretty-print": "                 0__DockWidgetContainer__1          Prqt_action__ActionPlugin__1__messages.ui          drqt_launch__Launch__1___plugincontainer_top_widget          Xrqt_publisher__Publisher__1__PublisherWidget          lrqt_reconfigure__Param__1___plugincontainer_top_widget          Brqt_plot__Plot__1__DataPlotWidget          \"rqt_top__TOP__1__                            6MinimizedDockWidgetsToolbar        "
+        }
+      },
+      "groups": {
+        "toolbar_areas": {
+          "keys": {
+            "MinimizedDockWidgetsToolbar": {
+              "type": "repr",
+              "repr": "8"
+            }
+          },
+          "groups": {}
+        }
+      }
+    }
+  }
+}
