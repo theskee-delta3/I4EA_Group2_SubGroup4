@@ -8,10 +8,18 @@
  3. KHOEUNG Mengkorng,   ID: e20180407
  4. KIM Veasna,          ID: e20180431
  5. KLENG Vireak,        ID: e20180439
-# Homework List:
-- Homework 01: Robot description
-- Homework 02: Model the robot
-- Homework 03: DOBOT Magician
-- Homework 04: Adding sensor
-- Homework 05: Publisher & subscriber
+# Homework 02: Model Robot
+# HOW TO RUN
+> Gazebo
+```
+roslaunch my_spideybot robot_gazebo.launch
+```
+
+> Scripts
+```
+rosrun my_spideybot move_robot_pub.py
+```
+```
+rosrun my_spideybot move_robot_sub.py
+```
 
